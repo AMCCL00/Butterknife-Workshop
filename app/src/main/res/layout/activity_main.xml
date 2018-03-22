@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrewmcclary.butterknifeworkshop.regular_binding.MainActivity">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/activity_regular_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="Input text here"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:id="@+id/activity_regular_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Submit"
+            android:id="@+id/activity_regular_button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Launch Regular Fragment"
+            android:id="@+id/activity_regular_launch_fragment_regular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="Launch Butterknife Activity"
+            android:id="@+id/activity_regular_butterknife_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/regular_fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+</RelativeLayout>
