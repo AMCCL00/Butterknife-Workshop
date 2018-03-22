@@ -1,61 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.andrewmcclary.butterknifeworkshop.regular_binding.MainActivity">
+    tools:context="com.example.andrewmcclary.butterknifeworkshop.regular_binding.MainActivity"
+    android:background="@color/colorPrimary">
 
-    <TextView
-        android:textColor="@android:color/black"
-        android:textSize="20sp"
-        android:layout_marginTop="15dp"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:id="@+id/activity_regular_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <EditText
-        android:hint="Input text here"
-        android:layout_centerInParent="true"
-        android:textColor="@android:color/black"
-        android:id="@+id/activity_regular_edit_text"
+    <Button
+        android:id="@+id/button_add_question"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Add Question"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_alignParentBottom="true"
+    <Button
+        android:id="@+id/button_take_quiz"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Take Quiz"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_question"
+        app:layout_constraintBottom_toTopOf="@+id/button_delete_quiz"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
-        <Button
-            android:text="Submit"
-            android:id="@+id/activity_regular_button_submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="Launch Regular Fragment"
-            android:id="@+id/activity_regular_launch_fragment_regular"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:text="Launch Butterknife Activity"
-            android:id="@+id/activity_regular_butterknife_launcher"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/regular_fragment_holder"
+    <Button
+        android:id="@+id/button_delete_quiz"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="Delete Quiz"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
-    </FrameLayout>
-
-
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>
